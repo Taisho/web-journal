@@ -2,9 +2,13 @@
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
-    <body>
-        <div id="app">
-            {{ message }}
+    <body ip="app" v-on:contextmenu="contextMenu">
+
+        <!-- Here is Context Menu -->
+        <div class="contextMenu">
+            <div class="item" v-on:click="createThought">
+                Create new Thought
+            </div>
         </div>
 
         <script src="main.js"></script>
